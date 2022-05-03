@@ -10,6 +10,27 @@
 * methods方法命名
   * 数据处理方法: <处理动作名><业务模型名>，如：loadUserList
   * 事件处理方法: handle<组件名称><事件名>，如：handleUserAddBtnClick
+* methods分组：
+  * 数据处理方法: 按照处理数据的类型分组，用“//////”分割换行
+  * 事件处理方法: 按照事件发生的组件分组，用“//////”分割换行
+
+### data
+```javascript```
+data() {
+  return {
+    // 视图模型v-model，支持双向绑定，用于获取界面输入
+    permissionNameKeyword: "",
+    // 视图数据模型，用于界面元素呈现
+    routePermissions: [],
+    selectedRoutePermissions: [],
+    editedRoutePermission: null,
+    // 视图状态模型，用于控制界面元素的状态
+    loading: false,
+    dialogVisible: false,
+    // 辅助对象
+    paginationManager: new PaginationManager(null, null, ["lastModifiedDate,desc"])
+  }
+```  
 
 ## Vue Style约定
 * 先定义组件样式然后在其内部**依次**定义组件子元素样式
