@@ -2,7 +2,7 @@
 
 VIP平台基于Vue和前端最佳实践设计的快速开发平台。
 
-![VIP架构](Vue Important Platform.png)
+![VIP架构](vip.png)
 
 ## VIP平台组件
 
